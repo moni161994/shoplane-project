@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Shoplane-JS Final Project</title>
+  </head>
+  <body>
+    <!-- header starts here -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="wrap">
+          <a href="index.html"><span>Shop</span>lane</a>
+
+          <ul>
+            <li>
+              <a href="#clothing-section">Clothing</a>
+            </li>
+
+            <li>
+              <a href="#accessories-section">Accessories</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            name="search"
+            placeholder="Search for Clothing and Accessories"
+          />
+        </div>
+        <div class="wrap">
+          <ul>
+            <li class="cart">
+              <a href="cart.html"
+                ><span id="cart-count" class="cart-count">0</span
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="#"
+                ><img
+                  src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header ends here -->
+
+    <!-- crousal starts here -->
+    <section class="banner-wrapper">
+      <div class="container">
+        <div id="owl-carousel" class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="images/HM.png" />
+          </div>
+          <div class="item">
+            <img src="images/us polo.png" />
+          </div>
+          <div class="item">
+            <img src="images/w.png" />
+          </div>
+          <div class="item">
+            <img src="images/Puma.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- crousal ends here -->
+
+    <!-- clothing & accessories section1 starts here -->
+    <section id="clothing-section" class="clothing-accessories">
+      <div class="container">
+        <h3 class="heading">Clothing for Men and Women</h3>
+        <ul id="clothing" class="card-grid"></ul>
+      </div>
+    </section>
+
+    <!-- clothing & accessories section1 ends here -->
+
+    <!-- clothing & accessories section2 strats here -->
+    <section id="accessories-section" class="clothing-accessories">
+      <div class="container">
+        <h3 class="heading">Accessories for Men and Women</h3>
+        <ul id="accessories" class="card-grid"></ul>
+      </div>
+    </section>
+    <!-- clothing & acessries section2 ends here -->
+    <!-- footer starts here -->
+    <footer class="footer">
+      <div class="container">
+        <ul>
+          <li><h2>online store</h2></li>
+          <li>men clothing</li>
+          <li>women clothing</li>
+          <li>men accessories</li>
+          <li>women accessories</li>
+        </ul>
+        <ul>
+          <li><h2>helpful links</h2></li>
+          <li>home</li>
+          <li>about</li>
+          <li>contacts</li>
+        </ul>
+        <ul>
+          <li><h2>partners</h2></li>
+          <li>zara</li>
+          <li>pantaloons</li>
+          <li>levis</li>
+          <li>ucb</li>
+          <li>+ many more</li>
+        </ul>
+        <ul>
+          <li><h2>address</h2></li>
+          <li>building 101</li>
+          <li>central avenue</li>
+          <li>la- 902722</li>
+          <li>united states</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- footer ends here -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
+    <script src="cart-count.js"></script>
+  </body>
+</html>
